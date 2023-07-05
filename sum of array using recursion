@@ -1,4 +1,5 @@
 #include <iostream>
+using namespace std;
 
 int calculateSum(int arr[], int size) {
     // Base case: if the array is empty, return 0
@@ -17,7 +18,7 @@ int main() {
     
     int sum = calculateSum(arr, size);
     
-    std::cout << "The sum of the array elements is: " << sum << std::endl;
+    cout << "The sum of the array elements is: " << sum << std::endl;
 
     return 0;
 
