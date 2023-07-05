@@ -1,0 +1,24 @@
+#include <iostream>
+
+int calculateSum(int arr[], int size) {
+    // Base case: if the array is empty, return 0
+    if (size == 0) {
+        return 0;
+    }
+    
+    // Recursive case: calculate sum of elements from index 0 to size-1
+    // by adding the first element to the sum of the rest of the array
+    return arr[0] + calculateSum(arr + 1, size - 1);
+}
+
+int main() {
+    int size = 5;
+    int arr[size] = {2, 4, 6, 8, 10};
+    
+    int sum = calculateSum(arr, size);
+    
+    std::cout << "The sum of the array elements is: " << sum << std::endl;
+
+    return 0;
+
+}
