@@ -1,0 +1,32 @@
+// REVERSE A STRING USING RECUTSION
+#include <iostream>
+using namespace std;
+
+void reverse_stri(string& str, int i, int j){
+    // base case(rukne wali condition)
+     if(i>j)
+     return ;
+     
+    //  ek case hum khud solve krenge
+    swap(str[i], str[j]);
+    i++;
+    j--;
+    
+    // recursive call
+    reverse_stri(str, i,j);
+    
+}
+
+
+
+int main() {
+    string str= "abcdef";
+    
+    reverse_stri(str,  0,  str.length()-1);
+    cout<<str;
+
+
+  
+
+    return 0;
+}
