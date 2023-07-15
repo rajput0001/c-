@@ -1,0 +1,44 @@
+#include <iostream>
+using namespace std;
+
+class Hero{
+        // properties or data members
+        private:
+        int health;
+        public:
+        char level;
+        
+        int gethealth(){
+            return health;
+        }
+        
+        void sethealth(int h){
+            health=h;
+        }
+     
+    };
+
+int main() {
+    // creating object
+    Hero rajput;
+    
+    
+    rajput.level = 'A';
+    // using setter
+    rajput.sethealth(100);
+    
+    
+    
+    
+    cout<<"Health is "<<rajput.gethealth()<<endl;
+    cout<<"Level is "<<rajput.level<<endl;
+    
+    
+    
+    
+    
+    
+    
+
+    return 0;
+}
