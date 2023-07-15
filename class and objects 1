@@ -1,0 +1,30 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+class Hero{
+        // properties or data members
+        public:
+        int health;
+        char level;
+     
+    };
+
+int main() {
+    // creating object
+    Hero rajput;
+    
+    rajput.health = 10;
+    rajput.level = 'A';
+    
+    cout<<"Health is "<<rajput.health<<endl;
+    cout<<"Level is "<<rajput.level<<endl;
+        return 0;
+}
+    
+    
+    
+    
+    
+    
+
