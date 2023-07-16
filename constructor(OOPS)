@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+class Hero{
+    public:
+    int health;
+    char level;
+    
+    // Default constructor
+    Hero(){
+        cout<<"constructor is called "<<endl;
+    }
+    
+    
+    
+};
+int main() {
+    // object created statically
+   Hero rajput;
+//   by line 19 a constructor is automatically called
+   cout<<"ajao kya ";
+   
+    return 0;
+}
